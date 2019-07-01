@@ -45,5 +45,5 @@ manager.on('launch', shard => console.log(`[SHARD] Launch event complete - ${sha
 // Emitted upon recieving a message from a shard.
 //   e.g. client.shard.send(`Hello shard from shard ${client.shard.id}`);
 manager.on('message', function(shard, message) {
-    //console.log(`[SHARD] Received message from Shard ID ${shard.id}:\n${message}`);
+    console.log(`[SHARD] Received message from Shard ID ${shard.id}:\n${message}`);
 });
